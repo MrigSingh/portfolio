@@ -1,0 +1,145 @@
+.item-container{
+  display: flex;
+  margin: 60px 0;
+  margin-bottom: 5%;
+  /* border: 1px solid black; */
+}
+.avatar-container{
+  position: relative;
+  flex: 1;
+  background: #75b79e52;
+}
+.avatar-container-right{
+  position: relative;
+  flex: 1;
+  background: #75b79e52;
+}
+.avatar-img{
+  position: absolute;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 40px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5);
+}
+.avatar-img-right{
+  position: absolute;
+  width: 100%;
+  margin-top: 40px;
+  left: -40px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5);
+}
+.details-container{
+  flex: 2;
+  margin-top: 40px;
+  padding-left: 40px;
+  margin-left: 60px;
+  /* border: 1px solid black; */
+}
+.details-container p {
+  width: 60%;
+}
+.details-container-right p {
+  width: 60%;
+}
+.details-container-right{
+  flex: 2;
+  margin-top: 40px;
+  padding-right: 40px;
+  margin-right: 60px;
+}
+.tech{
+  margin-bottom: 10px;
+}
+.tech-container{
+  display: flex;
+}
+.tech-item{
+  background: #75b79e;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-right: 20px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5);
+}
+.gap{
+  margin-top: 30px;
+  display: inline-block;
+  width: 20px;
+}
+.contact-container{
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+.info{
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.info-item{
+  display: flex;
+  align-items: center;
+}
+.image{
+  flex: 1;
+  text-align: center;
+}
+.info-link{
+  margin-left: 2vw;
+  font-weight: 500;
+}
+.showInMobile{
+  display: none;
+}
+@media (max-width: 1300px){
+  .avatar-container{
+    margin-left: 60px;
+  }
+  .details-container-right{
+    margin-left: 60px;
+  }
+  .contact-container{
+    width: 90%;
+  }
+}
+@media (max-width: 1000px){
+  .avatar-img-right{
+    left: 40px;
+  }
+  .avatar-container{
+    margin-left: 0;
+  }
+  .item-container{
+    flex-direction: column;
+  }
+  .avatar-img, .avatar-img-right{
+    position: relative;
+  }
+  .showInMobile{
+    display: flex;
+  }
+  .showInDesktop{
+    display: none;
+  }
+}
+@media (max-width: 768px){
+  .avatar-img, .avatar-img-right{
+    margin: 0;
+    left: 0;
+  }
+  .details-container{
+    margin: 40px 0;
+  }
+  .details-container p {
+    width: 90%;
+  }
+  .item-container{
+    margin: 0;
+  }
+  .contact-container{
+    width: 100%;
+  }
+}
