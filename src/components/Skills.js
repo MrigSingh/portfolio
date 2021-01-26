@@ -81,12 +81,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'center',
-    '& > *': {
-      margin: '1vw',
-      padding: '3vw',
-      textAlign: 'center'
-    },
+    justifyContent: 'center'
   },
 }));
 
@@ -96,8 +91,8 @@ export default function SimplePaper() {
   return (
     <div className={classes.root}>
       {skills.map((item, index) => (
-        <Paper key={index} elevation={5}>
-          <img src={item.image} width="150px" style={{borderRadius: '50%'}} />
+        <Paper className="skills-item" key={index} elevation={5}>
+          <img src={item.image} className="skills-img" style={{borderRadius: '50%'}} />
           <h2>{item.name}</h2>
           <h3>{item.skill}</h3>
       </Paper>

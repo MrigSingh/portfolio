@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import { smoothScroll } from './scroll'
 import './App.css';
 
 function App() {
@@ -14,11 +15,11 @@ function App() {
     <div id="hello" className="App">
       <div className="header-container">
         <ul>
-          <li onClick={() => setHeader('hello')} className={header === "hello" && "underline"}><a href="#hello">Hello</a></li>
-          <li onClick={() => setHeader('about')} className={header === "about" && "underline"}><a href="#about">About</a></li>
-          <li onClick={() => setHeader('skills')} className={header === "skills" && "underline"}><a href="#skills">Skills</a></li>
-          <li onClick={() => setHeader('projects')} className={header === "projects" && "underline"}><a href="#projects">Projects</a></li>
-          <li onClick={() => setHeader('contact')} className={header === "contact" && "underline"}><a href="#contact">Contact</a></li>
+          <li onClick={() => setHeader('hello')} className={header === "hello" ? "underline" : null}><a onClick={() => smoothScroll.scrollTo('hello')}>Hello</a></li>
+          <li onClick={() => setHeader('about')} className={header === "about" ? "underline" : null}><a onClick={() => smoothScroll.scrollTo('about')}>About</a></li>
+          <li onClick={() => setHeader('skills')} className={header === "skills" ? "underline" : null}><a onClick={() => smoothScroll.scrollTo('skills')}>Skills</a></li>
+          <li onClick={() => setHeader('projects')} className={header === "projects" ? "underline" : null}><a onClick={() => smoothScroll.scrollTo('projects')}>Projects</a></li>
+          <li onClick={() => setHeader('contact')} className={header === "contact" ? "underline" : null}><a onClick={() => smoothScroll.scrollTo('contact')}>Contact</a></li>
         </ul>
       </div>
       <div className="cover-container">
@@ -48,7 +49,7 @@ function App() {
           </div>
         </h1>
       </div>
-      <div className="section-container">
+      <div className="section-container experience">
         <div className="timeline-container">
           <div className="timeline-item">
             <h3>Experiences</h3>

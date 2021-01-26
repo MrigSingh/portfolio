@@ -11,6 +11,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import './styles.css'
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -48,7 +49,7 @@ export function ExperienceTimeline() {
             </Typography>
             <ul>
               <li><Typography>Solely responsible for migration of existing websites from Wordpress to React</Typography></li>
-              <li><Typography>Responsible for development of new feature and enhance current ones.</Typography></li>
+              <li><Typography>Responsible for development of new feature and enhancement of current ones.</Typography></li>
             </ul>
           </Paper>
         </TimelineContent>
@@ -157,7 +158,7 @@ export function EducationTimeline() {
       </TimelineItem>
       <TimelineItem>
       <TimelineOppositeContent className={classes.opposite}>
-          <Typography style={{marginLeft: '73px'}} variant="body2" color="textSecondary">
+          <Typography className="march" variant="body2" color="textSecondary">
             Mar 2014
           </Typography>
         </TimelineOppositeContent>

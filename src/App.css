@@ -269,9 +269,82 @@ h1, h2, h3, h4, h5{
   .section-container{
     width: 80%;
   }
+  .greet{
+    margin: 0;
+  }
+  .btn{
+    margin: 0;
+  }
 }
 @media (max-width: 768px){
   .section-container{
     width: 95%;
+  }
+  .role{
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .animated-item{
+    margin-top: 15px;
+  }
+  .cover-content{
+    width: 50%;
+  }
+  .avatar{
+    width: 20%;
+  }
+  .experience{
+    width: 100%;
+  }
+}
+@media (max-width: 600px){
+  .cover-container{
+    overflow: hidden;
+  }
+  .cover-img{
+    width: auto;
+    margin-left: -300px;
+    min-height: 100vh;
+  }
+  .cover-content{
+    left: 50%;
+    width: 80%;
+  }
+  .avatar{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .greet{
+    font-size: 36px;
+  }
+  .mr-2{
+    font-size: 22px;
+  }
+  .animated-item{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .role{
+    font-size: 14px;
+    width: 80%;
+    margin: 20px auto;
+  }
+  .btn{
+    padding: 10px 30px;
+  }
+  .makeStyles-opposite-3{
+    width: 16%;
+  }
+  .animated-head{
+    min-width: 37%;
+  }
+  .animated-heading{
+    font-size: 25px;
+  }
+  .animated-item-head{
+    font-size: 22px;
+  }
+  .header-container ul{
+    font-size: 16px;
   }
 }
